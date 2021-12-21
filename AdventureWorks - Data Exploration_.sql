@@ -14,4 +14,7 @@ Select * From HumanResources.Employee where Gender = 'F' and MaritalStatus = 'S'
 Select * From HumanResources.Employee where Gender = 'F' and MaritalStatus = 'S' and BirthDate > '1980-01-01';
 --- Select all Human resources who are male, single and borned after 1980
 Select * From HumanResources.Employee where Gender = 'M' and MaritalStatus = 'S' and BirthDate > '1980-01-01';
+--- Select all Human resources who are male, single, born after 1980 who had more than 40 hours of SickLeaveHours Ordered by ASC
+Select * From HumanResources.Employee where Gender = 'M' and MaritalStatus = 'S' and BirthDate > '1980-01-01' and SickLeaveHours > '40'
+order by SickLeaveHours ASC
 
