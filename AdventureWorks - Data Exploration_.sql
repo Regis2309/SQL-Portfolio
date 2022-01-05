@@ -26,3 +26,7 @@ Select * From HumanResources.Department;
 --- INNER JOIN on all columns from Humanresources.EmployeeDepartmentHistory and HumanResources.EmployeeDepartment
 Select HumanResources.EmployeeDepartmentHistory.BusinessEntityID, HumanResources.Department.GroupName From HumanResources.EmployeeDepartmentHistory 
 INNER JOIN HumanResources.Department ON HumanResources.EmployeeDepartmentHistory.DepartmentID = HumanResources.Department.DepartmentID
+--- Select all columns from Person.Address
+Select * From Person.Address;
+--- Select all columns from Person.Person
+Select * From Person.Person;
