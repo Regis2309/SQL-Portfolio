@@ -19,4 +19,10 @@ Select * From HumanResources.Employee where Gender = 'M' and MaritalStatus = 'S'
 order by SickLeaveHours ASC
 Select * From HumanResources.Employee where Gender = 'F' and MaritalStatus = 'S' and BirthDate > '1980-01-01' and SickLeaveHours > '40'
 order by SickLeaveHours ASC
-
+--- Select all columns from Humanresources.EmployeeDepartmentHistory
+Select * From HumanResources.EmployeeDepartmentHistory;
+--- Select all columns from Humanresources.EmployeeDepartment
+Select * From HumanResources.Department;
+--- INNER JOIN on all columns from Humanresources.EmployeeDepartmentHistory and HumanResources.EmployeeDepartment
+Select HumanResources.EmployeeDepartmentHistory.BusinessEntityID, HumanResources.Department.GroupName From HumanResources.EmployeeDepartmentHistory 
+INNER JOIN HumanResources.Department ON HumanResources.EmployeeDepartmentHistory.DepartmentID = HumanResources.Department.DepartmentID
