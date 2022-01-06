@@ -30,3 +30,6 @@ INNER JOIN HumanResources.Department ON HumanResources.EmployeeDepartmentHistory
 Select * From Person.Address;
 --- Select all columns from Person.Person
 Select * From Person.Person;
+--- INNER JOIN on all columns from Person.Address and Person.Person
+Select Person.Address.AddressLine1, Person.Address.AddressLine2, Person.Person.BusinessEntityID From Person.Person 
+INNER JOIN Person.Address ON Person.Address.rowguid = Person.Person.rowguid
