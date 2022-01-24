@@ -37,3 +37,5 @@ INNER JOIN Person.Address ON Person.Address.rowguid = Person.Person.rowguid
 Select * From Person.CountryRegion;
 --- Select all columns Person.CountryRegion Order by ModifiedDate ASC
 Select * From Person.CountryRegion Order by ModifiedDate ASC
+--- Select all columns Person.CountryRegion Order by CountryRegionCode DESC
+Select * From Person.CountryRegion Order by CountryRegionCode DESC
