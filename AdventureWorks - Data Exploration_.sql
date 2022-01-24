@@ -33,3 +33,7 @@ Select * From Person.Person;
 --- INNER JOIN on all columns from Person.Address and Person.Person
 Select Person.Address.AddressLine1, Person.Address.AddressLine2, Person.Person.BusinessEntityID From Person.Person 
 INNER JOIN Person.Address ON Person.Address.rowguid = Person.Person.rowguid
+--- Select all columns Person.CountryRegion
+Select * From Person.CountryRegion;
+--- Select all columns Person.CountryRegion Order by ModifiedDate ASC
+Select * From Person.CountryRegion Order by ModifiedDate ASC
