@@ -39,4 +39,5 @@ Select * From Person.CountryRegion;
 Select * From Person.CountryRegion Order by ModifiedDate ASC
 --- Select all columns Person.CountryRegion Order by CountryRegionCode DESC
 Select * From Person.CountryRegion Order by CountryRegionCode DESC
-
+--- Select all columns Production.Product
+Select * From Production.Product
